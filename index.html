@@ -16,12 +16,13 @@
   <body>
     <header id="header">
       <nav id="nav-bar">
-        <a href="#letter-a" class="nav-link">Letter A</a>
-        <a href="#letter-b" class="nav-link">Letter B</a>
-        <a href="#letter-c" class="nav-link">Letter C</a>
         <h1>Landing Page</h1>
+        <div class="nav-links">
+          <a href="#letter-a" class="nav-link">Letter A</a>
+          <a href="#letter-b" class="nav-link">Letter B</a>
+          <a href="#letter-c" class="nav-link">Letter C</a>
+        </div>
       </nav>
-
       <img
         src="https://images.pexels.com/photos/1337382/pexels-photo-1337382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="header image"
@@ -51,9 +52,19 @@
       ></iframe>
     </div>
     <div class="form">
-      <form id="form" action="https://www.freecodecamp.com/email-submits">
-        <input id="email" type="email" required placeholder="email adress" />
-        <input type="submit" id="submit" />
+      <form
+        id="form"
+        method="POST"
+        action="https://www.freecodecamp.com/email-submits"
+      >
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="email adress"
+          name="email"
+        />
+        <input type="submit" id="submit" value="submit" />
       </form>
     </div>
   </body>
