@@ -57,7 +57,6 @@ section {
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 30px;
   margin-block-end: 30px;
   width: 40%;
   height: 500px;
@@ -121,12 +120,24 @@ form input {
   box-shadow: none;
 }
 #submit {
-  padding: 5px;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
   background-color: #e77c9a;
-  font-size: 13px;
-  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+}
+#submit:hover {
+  background-color: #e49bb0;
 }
 
+#submit:active {
+  background-color: #e6acbc;
+  transform: translateY(4px);
+}
 @media only screen and (max-width: 600px) {
   #nav-bar {
     display: none;
@@ -146,5 +157,3 @@ form input {
     font-weight: bold;
   }
 }
-/* video not aligned properly
-submit button doesnt clikc */
